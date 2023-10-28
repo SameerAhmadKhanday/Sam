@@ -1,0 +1,52 @@
+@media (max-width:600px){
+   /* for phones */
+    body{
+        background-color:red;
+    }
+    div::after{
+        content: "this is mobile compactible";
+    }
+}
+
+@media(min-width:600px){
+    /* potrati tablets & big phones */
+    body{
+        background-color: aquamarine;
+    }
+    div::after{
+        content: "potrati tablets & big phones";
+    }
+
+}
+@media(min-width:768px){
+    /* tablets */
+    body{
+        background-color:blue;
+    }
+    div::after{
+        content: "tablets";
+    }
+}@media(min-width:992px){
+    /* laptop  desktop */
+    body{
+        background-color:yellow;
+    }
+    div::after{
+        content: "laptops";
+    }
+}
+@media(min-width:1200px){
+    /* larger screen */
+    body{
+        background-color:violet;
+    }
+    div::after{
+        content: "larger screen";
+    }
+}
+
+
+div{
+    text-align: center;
+    font-size:x-large;
+}

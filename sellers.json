@@ -1,0 +1,53 @@
+[
+      {
+        "name": "Rahul Enterprises",
+        "products": ["Walnuts"],
+        "district": "Srinagar"
+      },
+      {
+        "name": "Sameer Productions",
+        "products": ["Walnuts"],
+        "district": "Srinagar"
+      },
+      {
+        "name": "Prem Di Hatti",
+        "products": ["Patisa Barfi"],
+        "district": "Jammu"
+      },
+      {
+        "name": "Kud Wale",
+        "products": ["Patisa G"],
+        "district": "Jammu"
+      },
+      {
+        "name": "Seller 5",
+        "products": ["Product I", "Product J"],
+        "district": "Udhampur"
+      },
+      {
+        "name": "Seller 6",
+        "products": ["Product K", "Product L"],
+        "district": "Udhampur"
+      },
+      {
+        "name": "Seller 7",
+        "products": ["Product M", "Product N"],
+        "district": "Pulwama"
+      },
+      {
+        "name": "Seller 8",
+        "products": ["Product O", "Product P"],
+        "district": "Pulwama"
+      },
+      {
+        "name": "Saif Productions",
+        "products": ["Kesar", "Kesar Flower"],
+        "district": "Anantnag"
+      },
+      {
+        "name": "Anant Shoppers",
+        "products": ["Kesar Extracts"],
+        "district": "Anantnag"
+      }
+    ]
+ 

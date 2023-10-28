@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Leaflet Map Example</title>
+    <!-- Include Leaflet CSSs -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+
+        body{
+            background-color: black;
+        }
+        #map{
+            margin-top: 100px;
+            margin-left: 30px;
+            border: 3px solid gold;
+            border-radius:8px ;
+        }
+        #sellers-list{
+            height: 150px;
+            width: 250px;
+            border: 2px solid gold;
+            display:flex ;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            margin-left: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+            padding: 10px;
+
+            
+        }
+        .san{
+            display: flex;
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Create a div to hold the map -->
+    <h1>Welcome to Jammu and Kashmir(ODOP)</h1>
+    <div class="san">
+        <div id="map" style="display: flex; justify-content: center; align-items: center; width: 50%; height: 50vh;"></div>
+<div id="sellers-list"></div>
+
+
+
+    <!-- Include Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./map.js"></script>
+    </div>
+</body>
+</html>

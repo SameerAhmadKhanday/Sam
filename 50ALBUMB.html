@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIDE</title>
+    <style>
+        .container{
+            display: grid;
+            height: 500px; 
+            grid-template-columns: repeat(3 ,1fr);
+            grid-template-rows: repeat(3,150px);
+        }
+        .box{
+            /* height: 100px;
+            width: 100px;    */
+        }
+        .box1{
+            background-color: red;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            
+        }
+        .box2{
+            background-color:green;
+            overflow: scroll;
+            
+        }
+        .box3{
+            background-color:yellow;
+        }
+        .box4{
+            background-color:brown;
+            grid-column-start:2 ;
+            grid-column-end: 4;
+        }
+        .box5{
+            background-color:gray;
+        }
+        .box6{
+            background-color:purple;
+        }
+        .box7{
+            background-color:palegoldenrod;
+        }
+        .box8{
+            background-color:violet;
+        }
+        .box9{
+            background-color: magenta;
+        }
+        .sam{
+            height: 50px;
+            width: 50px;
+            background-color:yellowgreen;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- grid albumb -->
+    <div class="container">
+        <div class="box box1">
+        <p class="sam">box1</p>
+        </div>
+        <div class="box box2"><img src="https://images.pexels.com/photos/3184455/pexels-photo-3184455.jpeg?auto=compress&cs=tinysrgb&w=126&h=75&dpr=2" alt="" srcset="" height="250px" width="250px"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </div>
+</body>
+</html>

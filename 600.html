@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll to Map Image</title>
+<style>
+  /* Add some basic styling to the button */
+  #show-map-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  /* Add some spacing for the smooth scroll */
+  #map-container {
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <!-- Button to scroll to the map -->
+  <button id="show-map-button">Show Map</button>
+
+  <!-- Content above the map -->
+  <p>Scroll down to see the map:</p>
+
+  <!-- Map container with an image (you can replace the image URL with your map image) -->
+  <div id="map-container">
+    <img src="https://i.pinimg.com/originals/31/c4/d5/31c4d52542cb0c2f552cb3484ee4c6ba.jpg" alt="Map Image">
+  </div>
+
+  <script>
+    // JavaScript to handle the button click event and scroll to the map
+    const showMapButton = document.getElementById('show-map-button');
+    const mapContainer = document.getElementById('map-container');
+
+    showMapButton.addEventListener('click', () => {
+      // Scroll to the map container smoothly
+      mapContainer.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

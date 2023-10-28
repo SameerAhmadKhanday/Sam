@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition and tooltips</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color:blue;
+            transition: width 7s , height 8s; 
+            transition-timing-function:ease-in-out;
+            transition-delay: 3s;
+            
+        }
+        div:hover{
+            width:200px;
+            height:200px;
+            background-color:red ;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div></div>
+    <p title="hello sam">Lorem, ipsum dolor.</p>
+</body>
+</html>

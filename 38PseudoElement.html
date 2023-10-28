@@ -1,0 +1,44 @@
+<!-- some of the pseudo-elements 
+::first-line
+::first-letter
+::after
+::before
+::marker
+::selection -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO ELEMENTS</title>
+    <style>
+         /* p::first-line{
+            color: violet;
+        } 
+        p::first-letter{
+            color: violet;
+        } */
+        p::after{
+            content: "_sameer";
+            color: blue;
+        }
+        p::before{
+            content: "_sameer";
+            color: blue;
+        }
+        p::selection{
+            background-color:black;
+            color: yellow;
+        }
+        h1::marker{
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas temporibus eius recusandae itaque libero omnis iste ex eligendi reiciendis dolor non repudiandae, voluptate repellendus laborum nulla distinctio tempora quos excepturi qui delectus magni neque dolorum cumque modi. Laboriosam vero dicta exercitationem, odit, magnam cumque eius maiores unde aperiam, qui praesentium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero rem consectetur quis enim facilis cum veritatis excepturi natus modi in eos eligendi aliquam, tenetur ducimus, numquam voluptate. Cupiditate, nemo excepturi!</p>
+    <h1>NASEER</h1>
+</body>
+</html>

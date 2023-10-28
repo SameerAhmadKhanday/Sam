@@ -1,0 +1,53 @@
+<!-- most used css pseudo class selectors -->
+<!-- hover,focus,link,visited,active,first-child,lang,nth-child() -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+    <style>
+         .hover:hover{
+            background-color:black;
+            color: white;
+        }
+        input:focus{
+            color: red;
+            background-color:black;
+            font-size: medium;
+        } */
+        /* a:hover{
+            color: pink;
+        }
+        a.active{
+            color: brown;
+        } */
+        /* highest priority after visiting */
+        /* a:visited{
+            color: black;
+        } */
+         a:first-child{
+            color: yellow;
+        } 
+        /* we can use it on even or odd also */
+        a:nth-child(2n+1){
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- pseudo class -->
+    <p class="hover">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, accusamus.
+
+    </p>
+    <input type="text">
+    <br>
+    <nav>
+        <a href="https://www.youtube.com/">sameer</a>
+    <a href="https://www.youtube.com/">youtube</a>
+    <a href="https://www.youtube.com/">youtube</a>
+    </nav>
+    
+</body>
+</html>

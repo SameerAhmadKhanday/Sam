@@ -1,0 +1,29 @@
+/* body{
+    background-color:yellowgreen;
+} */
+
+
+/* descendent selector */
+main p{
+    color: brown;
+}
+
+
+/* child selector */
+h1 > p {
+    color: blue;
+}
+/* adjecent sibling sel */
+section + p {
+    color: red;
+}
+/* general sibling sel */
+section ~ p{
+    color: aqua;
+}
+
+/* attribute sel */
+[target="_blank"] {
+    color:pink;
+    font-style: italic;
+}

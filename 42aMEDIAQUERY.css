@@ -1,0 +1,54 @@
+body{
+    background-color:black;
+}
+div{
+    font-size: xx-large;
+    text-align: center;
+}
+div::after{
+    content: "welcome to the demo";
+}
+/* @media(max-width:400px){
+    body{
+        background-color:yellow;
+    }
+    div::after{
+        content: "great sam!!!";
+    }
+    
+} */
+/* @media(min-width:400px) and (max-width:768px) 
+or we can do it  */
+/* @media(400px <= width <= 768px){
+    body{
+        background-color:grey;
+    }
+    div::after{
+        content: "mid-size";
+    }
+
+
+@media(min-width:786px){
+    body{
+    background-color:purple;
+    }
+    div::after{
+        content: "yes sameer it is working";
+    }
+}
+@media(min-width:900px){
+    body{
+    background-color: red;
+    }
+    div::after{
+        content: "yes sameer it is working";
+    }
+} */
+@media(max-width:600px){
+    body{
+        background-color:pink;
+    }
+    div::after{
+        content: "yeah bero !!";
+    }
+}

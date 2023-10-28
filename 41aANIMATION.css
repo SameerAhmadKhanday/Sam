@@ -1,0 +1,55 @@
+div{
+    height: 100px;
+    background-color:pink; 
+    width: 100;
+    position:relative; 
+    animation-name:colorchange;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite; 
+    animation-direction:alternate-reverse;
+    animation-fill-mode:backwards;  
+     /* SHORT HAND 
+    animation:colorchange 8s e 3s infinite reverse fill-mode; */
+    
+}
+#ease {
+    animation-timing-function: ease;
+}
+#linear{
+    animation-timing-function: linear;
+}
+#ease-in{
+    animation-timing-function: ease-in;
+}
+#ease-out{
+    animation-timing-function: ease-out;
+}
+@keyframes colorchange{
+    0%{
+        background-color:green;
+        top:0px;
+        left:0px;
+    }
+    25%{
+        background-color:yellow;
+        top:0px;
+        left:200px;
+    }
+    50%{
+        background-color: black;
+        top:200px;
+        left:200px;
+    }
+    75%{
+        background-color: aquamarine;
+        top:200px;
+        left:0px;
+    }
+    100%{
+        background-color:gray;
+        top:0px;
+        left:0px;
+
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jammu and Kashmir Login/Signup</title>
+    <style>
+        body {
+            background-color:#0056b3;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+        .tab:last-child {
+            margin-right: 0;
+        }
+        .tab:hover {
+            background-color: #0056b3;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Jammu and Kashmir ODOP Portal</h2>
+        <div class="tabs">
+            <div class="tab" id="loginTab">Login</div>
+            <div class="tab" id="signupTab">Sign Up</div>
+        </div>
+        <div id="loginForm">
+            <h3>Login</h3>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <a href="500.html">Login</a>
+            </form>
+        </div>
+        <div id="signupForm" style="display: none;">
+            <h3>Sign Up</h3>
+            <form>
+                <div class="form-group">
+                    <label for="newEmail">Email:</label>
+                    <input type="email" id="newEmail" name="newEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">Password:</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                </div>
+                <button class="btn" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const loginTab = document.getElementById("loginTab");
+        const signupTab = document.getElementById("signupTab");
+        const loginForm = document.getElementById("loginForm");
+        const signupForm = document.getElementById("signupForm");
+
+        loginTab.addEventListener("click", () => {
+            loginForm.style.display = "block";
+            signupForm.style.display = "none";
+            loginTab.style.backgroundColor = "#007bff";
+            signupTab.style.backgroundColor = "";
+        });
+
+        signupTab.addEventListener("click", () => {
+            loginForm.style.display = "none";
+            signupForm.style.display = "block";
+            signupTab.style.backgroundColor = "#007bff";
+            loginTab.style.backgroundColor = "";
+        });
+    </script>
+</body>
+</html>
